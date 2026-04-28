@@ -58,7 +58,7 @@ export default function Contato() {
               {
                 icon: '✉️',
                 titulo: 'E-mail',
-                info:  'carlafrancisco145@gmail.com',
+                info:  'carlafrancisco1451@gmail.com',
               },
               {
                 icon: '🕐',
