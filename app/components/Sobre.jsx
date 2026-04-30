@@ -56,9 +56,9 @@ export default function Sobre() {
           {/* Formação */}
           <div className="space-y-4">
             {[
-              { titulo: 'Especialização em Endodontia', local: 'Associação Brasileira de Odontologia' },
+              { titulo: 'Especialização em Endodontia', local: 'Associação dos Cirurgiões Dentistas da Baixada Santista' },
               { titulo: 'Graduação em Odontologia',     local: 'Universidade de Ribeirão Preto - UNAERP' },
-              { titulo: 'Aperfeiçoamento em Microscopia', local: 'Sociedade Brasileira de Endodontia' },
+              { titulo: 'Aperfeiçoamento em Microscopia'},
             ].map((f) => (
               <div key={f.titulo} className="flex gap-4 items-start">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#C9A96E] mt-2 shrink-0" />
