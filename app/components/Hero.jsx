@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
 
@@ -97,10 +98,13 @@ export default function Hero() {
             {/* Foto (placeholder com gradiente) */}
             <div className="relative w-full h-full bg-gradient-to-b from-[#2A2620] to-[#1C1A17] overflow-hidden flex items-end justify-center">
               {/* Substituir por <Image src="/dra-carla.jpg" fill alt="Dra. Carla Francisco" className="object-cover" /> */}
-              <div className="text-center pb-8">
-                <p className="font-display text-[#C9A96E] text-xl italic">Dra. Carla Francisco</p>
-                <p className="text-[#7A7060] text-xs tracking-widest mt-1">CRO · Endodontia</p>
-              </div>
+              <Image
+  src="/Foto_DoutoraCarla.jpeg"
+  fill
+  alt="Dra. Carla Francisco"
+  className="object-cover object-top"
+  priority
+/>
             </div>
             {/* Badge */}
             <div className="absolute -bottom-6 -right-6 bg-[#C9A96E] text-[#1C1A17] px-5 py-4 text-center">
