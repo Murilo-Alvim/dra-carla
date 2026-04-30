@@ -36,17 +36,6 @@ export default function Footer() {
               <p className="text-[#7A7060] text-xs">carlafrancisco1451@gmail.com</p>
               <p className="text-[#7A7060] text-xs">Santos, SP</p>
             </div>
-            <div className="flex gap-3 mt-6">
-              {['Instagram', 'Facebook'].map((s) => (
-                <a
-                  key={s}
-                  href="#"
-                  className="px-3 py-1.5 border border-[#C9A96E]/20 text-[#7A7060] text-[10px] tracking-wider hover:border-[#C9A96E]/60 hover:text-[#C9A96E] transition-colors"
-                >
-                  {s}
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
