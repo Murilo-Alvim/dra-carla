@@ -1,14 +1,13 @@
 export default function Sobre() {
   return (
     <section id="sobre" className="py-28 bg-[#F7F3EE] relative overflow-hidden">
-      {/* Decoração fundo */}
       <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#C9A96E]/5 -translate-y-1/2 translate-x-1/3" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-20 items-center">
+
         {/* Lado esquerdo — decorativo */}
         <div className="relative">
           <div className="relative w-full aspect-[4/5] bg-[#EDE8E0] overflow-hidden">
-            {/* Placeholder foto */}
             {/* <Image src="/sobre.jpg" fill alt="Consultório" className="object-cover" /> */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
@@ -20,19 +19,19 @@ export default function Sobre() {
             </div>
           </div>
 
-          {/* Card flutuante */}
+          {/* Card CRO flutuante */}
           <div className="absolute -right-8 bottom-12 bg-[#1C1A17] text-white px-6 py-5 max-w-[200px] hidden lg:block">
-            <p className="font-display text-4xl text-[#C9A96E] font-light">CRO</p>
-            <p className="text-xs text-[#7A7060] mt-1 tracking-wide">Registro Ativo<br/>Conselho Regional</p>
+            <p className="font-display text-3xl text-[#C9A96E] font-light">CRO-SP</p>
+            <p className="text-white text-xl font-display font-light mt-1">57625</p>
+            <p className="text-xs text-[#7A7060] mt-2 tracking-wide">Registro Ativo<br/>Conselho Regional</p>
           </div>
 
-          {/* Linha decorativa */}
           <div className="absolute -left-6 top-12 bottom-12 w-px bg-[#C9A96E]/30 hidden lg:block" />
         </div>
 
         {/* Lado direito — texto */}
         <div>
-          <p className="text-[#C9A96E] text-xs tracking-widest3 uppercase font-sans mb-5">
+          <p className="text-[#C9A96E] text-xs tracking-widest uppercase font-sans mb-5">
             Sobre a Especialista
           </p>
           <h2 className="font-display text-4xl lg:text-5xl text-[#1C1A17] font-light leading-tight mb-6">
@@ -57,7 +56,7 @@ export default function Sobre() {
           <div className="space-y-4">
             {[
               { titulo: 'Especialização em Endodontia', local: 'Associação dos Cirurgiões Dentistas da Baixada Santista' },
-              { titulo: 'Graduação em Odontologia',     local: 'Universidade de Ribeirão Preto - UNAERP' },
+              { titulo: 'Graduação em Odontologia',     local: 'Universidade de Ribeirão Preto — UNAERP' },
               { titulo: 'Aperfeiçoamento em Microscopia'},
             ].map((f) => (
               <div key={f.titulo} className="flex gap-4 items-start">
@@ -69,7 +68,14 @@ export default function Sobre() {
               </div>
             ))}
           </div>
+
+          {/* CRO mobile */}
+          <div className="mt-8 inline-flex items-center gap-3 border border-[#C9A96E]/30 px-5 py-3 lg:hidden">
+            <span className="text-[#C9A96E] text-xs tracking-widest uppercase font-medium">CRO-SP 57625</span>
+            <span className="text-[#7A7060] text-xs">Registro Ativo</span>
+          </div>
         </div>
+
       </div>
     </section>
   );
